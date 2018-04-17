@@ -2,25 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
+    <title>Городок Седона</title>
   </head>
   <body>
 
-  <header class="main-heade">
+  <header class="main-header">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
     <nav class="main-navigation">
-      <a class="main-navigation-logo">
-        <img src="img/main-logo.jpg" width="110" height="110" alt="Логотип Седона">
-      </a>
       <ul class="main-navigation-menu">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
-        <li class="navigation-logo"><a href="index.html">Logo</a></li>
+        <li class="main-navigation-logo"><img src="img/main-logo.svg" width="110" height="110" alt="Логотип Седона"></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
-
   </header>
+
   <main class="container">
     <h1 class="visually-hidden">Сайт городка Седона</h1>
     <section class="advantage">
@@ -32,8 +30,11 @@
       <h2>Настоящий городок</h2>
       <span>-№1-</span>
       <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-      <img src="img/advantage-number-uno.jpg" width="110" height="110" alt="Фото городка">
-      <ul class="advantage-number-uno-items">
+      <img src="img/advantage-number-uno.svg" width="110" height="110" alt="Фото городка">
+    </section>
+
+    <section class="services">
+      <ul class="services-items">
         <li>
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем отеле, все как в кино!</p>
@@ -53,7 +54,7 @@
       <h2>Там есть мост дьявола</h2>
       <span>-№2-</span>
       <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-      <img src="img/advantage-number-two.jpg" width="110" height="110" alt="Фото моста Дьявола">
+      <img src="img/advantage-number-two.svg" width="110" height="110" alt="Фото моста Дьявола">
     </section>
 
     <section class="advantages-other">
@@ -79,7 +80,7 @@
     <section class="appointment-info">
       <h2>Заинтересовались?</h2>
       <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="button search-hostel-button" href="#">Поиск гостиницы в Седоне</a>
+      <a class="button search-hotel-button" href="#">Поиск гостиницы в Седоне</a>
     </section>
 
     <section class="modal modal-appointment">
@@ -104,9 +105,21 @@
     <section class="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13094.228363493972!2d-111.76162156629346!3d34.86735470447219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1418053046776" width="1200" height="600" frameborder="0" style="border:0"></iframe>
     </section>
-    
+
   </main>
   <footer class="main-footer">
+    <span class="tag">#VISITSEDONA</span>
+
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">Youtube</a></li>
+      </ul>
+      <img class="developer" src="img/developer.svg" alt="Разработчик">
+
+    </div>
+
 
   </footer>
 
