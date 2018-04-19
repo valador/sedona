@@ -22,7 +22,57 @@
   <h1 class="visually-hidden">Гостиницы городка Седона</h1>
   <section class="filters">
     <h2 class="visually-hidden">Фильтр Гостиниц</h2>
-    
+    <form class="filter" action="hotels.html" method="get">
+      <fieldset class="filter-infrastructure">
+        <legend>Инфраструктура</legend>
+        <ul class="filter-infrastructure-option">
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Бассейн</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="wifi">
+            <label for="wifi">Wi-Fi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="filter-quarters-type">
+        <legend>Тип жилья:</legend>
+        <ul class="filter-quarters-type-option">
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+            <label for="hotel">Гостиница</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name=motel" id="motel" checked>
+            <label for="motel">Мотель</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
+            <label for="apartments">Апартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="cost-per-day">
+        <legend>Стоимость в сутки (Р):</legend>
+        <ul class="cost-per-day-filter">
+          <li class="filter-option">
+            <label for="min-cost">От</label>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="text" name="min-cost" id="min-cost" value="0">
+          </li>
+          <li class="filter-option">
+            <label for="max-cost">До</label>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="text" name="max-cost" id="max-cost" value="3000">
+          </li>
+        </ul>
+      </fieldset>
+        <button class="button filters-submit-button" type="submit">Показать</button>
+    </form>
+
 
   </section>
 
