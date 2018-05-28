@@ -1,0 +1,22 @@
+{
+  "name": "sedona",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "scripts": {
+    "start": "http-server"
+  },
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valador/barbershop.git"
+  },
+  "author": "SLAYER",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valador/barbershop/issues"
+  },
+  "homepage": "https://github.com/valador/barbershop#readme"
+}
