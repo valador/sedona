@@ -31,9 +31,20 @@ body {
 
 }
 
+a {
+  text-decoration: none;
+}
+
 h2 {
   font-size: 21px;
   line-height: 26px;
+}
+
+.main-navigation-menu,
+.services-items,
+.intro-two-items,
+.footer-social ul {
+  list-style: none;
 }
 
 .intro {
