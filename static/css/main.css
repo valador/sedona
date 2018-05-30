@@ -23,9 +23,10 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: #ffffff;
 
@@ -35,21 +36,24 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 21px;
+.main-navigation {
+  font-weight: 700;
   line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
-.main-navigation-menu,
-.services-items,
-.intro-two-items,
-.footer-social ul {
+.site-navigation {
   list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
 }
 
 .intro {
   color: #000000;
-  text-align: center;
 
   background-color: #ffffff;
   background-image: url("/img/intro-bg.jpg");
@@ -62,5 +66,22 @@ h2 {
 }
 
 .intro-uno {
+  color: #ffffff;
 
+  background-color: #81b3d2;
+
+}
+
+.intro-two {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-list h3 {
+  font-size: 21px;
 }
