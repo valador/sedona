@@ -85,3 +85,84 @@ a {
 .services-list h3 {
   font-size: 21px;
 }
+
+.intro-two-items {
+  list-style: none;
+}
+
+.intro-two-items h3 {
+  font-size: 21px;
+}
+
+.intro-other {
+  background-color: #eeeeee;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:focus,
+.button:active {
+  background-color: #5496bd;
+}
+
+
+.search-hotel-button {
+  background-color: #766357;
+
+}
+.search-hotel-button:hover {
+  background-color: #604e43;
+}
+
+.search-hotel-button:focus,
+.search-hotel-button:active {
+  background-color: #503e33;
+}
+
+.appointment-info h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.appointment-info p {
+  line-height: 24px;
+}
+.appointment-form input {
+  font: inherit;
+  background-color: #f2f2f2;
+
+  border: 1px solid #ffffff;
+
+}
+
+.appointment-form input:hover {
+  background-color: #ebebeb;
+}
+
+.appointment-form input:focus {
+  background-color: #ffffff;
+}
+
+.main-footer {
+  background-color: #f9fbf6;
+}
+
+.tag {
+  font-weight: 700;
+  font-size: 21px;
+}
+.footer-social {
+  list-style: none;
+}
