@@ -177,7 +177,40 @@ a {
   color: #766357;
 }
 
+.filter fieldset {
+  border: none;
+}
+
 .filter legend {
   font-weight: 700;
   font-size: 16px;
+}
+
+.filter {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url("/img/filter-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.sorting-by:hover {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-by:focus {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.sorting-by:active {
+  color: #000000;
+  border-bottom: none;
 }
