@@ -200,17 +200,17 @@ a {
   list-style: none;
 }
 
-.sorting-by:hover {
+.sorting-by-item:hover {
   color: #81b3d2;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-by:focus {
+.sorting-by-item:focus {
   color: #81b3d2;
   border-bottom: none;
 }
 
-.sorting-by:active {
+.sorting-by-item:active {
   color: #000000;
   border-bottom: none;
 }
