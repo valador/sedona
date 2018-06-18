@@ -26,7 +26,6 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
 
   background-color: #ffffff;
 
@@ -36,7 +35,16 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 .main-navigation {
+  display: flex;
+  align-items: center;
+
   font-weight: 700;
   line-height: 26px;
   color: #000000;
@@ -44,7 +52,18 @@ a {
   background-color: #ffffff;
 }
 
+.main-header-logo {
+
+}
+
 .site-navigation {
+  display: flex;
+  
+
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
