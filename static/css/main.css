@@ -58,8 +58,6 @@ a {
 
 .site-navigation {
   display: flex;
-  
-
 
   margin: 0;
   padding: 0;
@@ -73,6 +71,9 @@ a {
 
 .intro {
   color: #000000;
+  text-align: center;
+
+  margin: 0;
 
   background-color: #ffffff;
   background-image: url("/img/intro-bg.jpg");
@@ -85,19 +86,38 @@ a {
 }
 
 .intro-uno {
+  display: flex;
   color: #ffffff;
 
   background-color: #81b3d2;
 
 }
 
+.obertka-uno {
+  text-align: center;
+  padding: 47px 59px;
+  margin: 0;
+}
 .intro-two {
+  display: flex;
+
   color: #ffffff;
 
+
   background-color: #81b3d2;
+}
+
+.services {
+
 }
 
 .services-list {
+  display: flex;
+
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -105,11 +125,28 @@ a {
   font-size: 21px;
 }
 
-.intro-two-items {
+.obertka-two {
+  padding: 47px 59px;
+  margin: 0;
+
+  text-align: center;
+}
+
+.intro-others-items {
+  display: flex;
+
+  text-align: center;
+
+
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 68px;
+  padding-right: 68px;
+  padding-bottom: 60px;
   list-style: none;
 }
 
-.intro-two-items h3 {
+.intro-others-items h3 {
   font-size: 21px;
 }
 
@@ -149,6 +186,10 @@ a {
 .search-hotel-button:focus,
 .search-hotel-button:active {
   background-color: #503e33;
+}
+
+.appointment-info {
+  text-align: center;
 }
 
 .appointment-info h2 {
