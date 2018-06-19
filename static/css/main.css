@@ -69,17 +69,27 @@ a {
   color: #000000;
 }
 
+.welcome-banner {
+  margin-bottom: 60px;
+
+  width: 100%;
+  height: 509px;
+  background-color: #00367cdc;
+  background-image: url("/img/stripe.png"), url("/img/banner-text.png"), url("/img/intro-bg.jpg");
+  background-position: bottom center, center center, top center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, auto, cover;
+}
 .intro {
+
   color: #000000;
   text-align: center;
 
-  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
 
-  background-color: #ffffff;
-  background-image: url("/img/intro-bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
+
 
 .intro p {
   color: #333333;
@@ -91,12 +101,14 @@ a {
 
   background-color: #81b3d2;
 
+  margin-bottom: 60px;
 }
 
 .obertka-uno {
   text-align: center;
   padding: 47px 59px;
-  margin: 0;
+  margin-bottom: 46px;
+  width: 400px;
 }
 .intro-two {
   display: flex;
@@ -108,6 +120,7 @@ a {
 }
 
 .services {
+  margin-bottom: 60px;
 
 }
 
@@ -126,31 +139,40 @@ a {
 }
 
 .obertka-two {
+  width: 400px;
+
   padding: 47px 59px;
   margin: 0;
 
   text-align: center;
 }
 
-.intro-others-items {
+.intro-other-items {
   display: flex;
-
-  text-align: center;
-
+  justify-content: space-between;
 
   margin: 0;
+  padding: 0;
+
+  text-align: center;
+  list-style: none;
+}
+
+.intro-other-items h3 {
+  font-size: 21px;
+}
+
+.intro-item {
+  width: 400px;
+}
+
+.intro-other {
+  margin-bottom: 54px;
   padding-top: 50px;
   padding-left: 68px;
   padding-right: 68px;
   padding-bottom: 60px;
-  list-style: none;
-}
 
-.intro-others-items h3 {
-  font-size: 21px;
-}
-
-.intro-other {
   background-color: #eeeeee;
 }
 
