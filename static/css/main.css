@@ -57,7 +57,6 @@ a {
 }
 
 .site-navigation {
-  display: flex;
 
   margin: 0;
   padding: 0;
@@ -107,7 +106,6 @@ a {
 .obertka-uno {
   text-align: center;
   padding: 47px 59px;
-  margin-bottom: 46px;
   width: 400px;
 }
 .intro-two {
@@ -198,6 +196,12 @@ a {
 
 
 .search-hotel-button {
+  font-size: 21px;
+  color: #ffffff;
+
+  width: 576px;
+  height: 86px;
+
   background-color: #766357;
 
 }
@@ -252,7 +256,10 @@ a {
 /*hotels page*/
 .inner-page {
   text-align: left;
+}
 
+.inner-page .site-navigation {
+  padding-left: 73px;
 }
 
 .site-navigation-current {
@@ -269,6 +276,10 @@ a {
 }
 
 .filter {
+  display: flex;
+  padding: 28px 73px;
+  margin-bottom: 30px;
+
   color: #000000;
 
   background-color: #ffffff;
@@ -278,8 +289,53 @@ a {
 
 }
 
+.filter-infrastructure {
+  margin: 0;
+  padding: 0;
+  width: 241px;
+}
+
+.filter-quarters-type {
+  margin: 0;
+  padding: 0;
+  width: 488px;
+}
+
+.cost-per-day {
+  margin: 0;
+  padding: 0;
+}
+
 .filter ul {
   list-style: none;
+}
+
+.sorting {
+  padding-left: 73px;
+  margin-bottom: 33px;
+}
+
+.sorting span {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sorting h2 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-by {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-from {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-by-item:hover {
@@ -295,4 +351,20 @@ a {
 .sorting-by-item:active {
   color: #000000;
   border-bottom: none;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style: none;
+  padding: 30px 73px;
+}
+
+.results-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.results-item:first-child {
+  border-top: 1px solid #e5e5e5;
 }
