@@ -55,6 +55,8 @@ a {
   color: #000000;
 
   background-color: #ffffff;
+
+  margin-bottom: 0;
 }
 
 .site-navigation {
@@ -67,8 +69,20 @@ a {
   list-style: none;
 }
 
-.site-navigation:first-child {
+.site-navigation li:nth-child(1) {
   order: 2;
+}
+.site-navigation li:nth-child(2) {
+  order: 0;
+}
+.site-navigation li:nth-child(3) {
+  order: 1;
+}
+.site-navigation li:nth-child(4) {
+  order: 3;
+}
+.site-navigation li:nth-child(5) {
+  order: 4;
 }
 
 .site-navigation a {
