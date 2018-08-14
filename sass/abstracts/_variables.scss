@@ -3,7 +3,18 @@
 
 //Цвета
 $colors: (
-  'white': #ffffff
+  'white': #ffffff,
+  'textfield-container': #f2f2f2,
+  'textfield-hover': #ebebeb,
+  'bg-white': #eeeeee,
+  'blu': #81b3d2,
+  'blu-hover': #669ec0,
+  'blu-active': #5496bd,
+  'brown': #766357,
+  'hover': #604e43,
+  'active': #503e33,
+  'footer-white': #f9fbf6
+
 );
 
 @function color($key) {

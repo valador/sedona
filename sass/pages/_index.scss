@@ -1,116 +1,34 @@
 .intro {
-  color: #000000;
-  text-align: center;
 
-  margin-bottom: 60px;
-  padding: 0;
-
-  background-color: #ffffff;
-
-  p {
-    color: #333333;
-  }
-}
-
-.welcome-banner {
-  margin-bottom: 60px;
-
-  width: 100%;
-  height: 509px;
-  background-color: #00367cdc;
-  background-image: url("/img/stripe.png"), url("/img/banner-text.png"), url("/img/intro-bg.jpg");
-  background-position: bottom center, center center, top center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: contain, auto, cover;
 }
 
 .intro-uno {
-  display: flex;
-  color: #ffffff;
 
-  background-color: #81b3d2;
-
-  margin-bottom: 60px;
-}
-.obertka-uno {
-  text-align: center;
-  padding: 47px 59px;
-  width: 400px;
 }
 
 .services {
-  margin-bottom: 60px;
 
   .services-list {
-    display: flex;
 
-    text-align: center;
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    h3 {
-      font-size: 21px;
-    }
   }
 }
 
 .intro-two {
-  display: flex;
-  width: 400px;
-  padding: 47px 59px;
-  margin: 0;
-  color: #ffffff;
-  text-align: center;
-  background-color: #81b3d2;
-  .obertka-two {
-    width: 400px;
 
-    padding: 47px 59px;
-    margin: 0;
-
-    text-align: center;
-  }
 }
 
 .intro-other {
-  margin-bottom: 54px;
-  padding-top: 50px;
-  padding-left: 68px;
-  padding-right: 68px;
-  padding-bottom: 60px;
-
-  background-color: #eeeeee;
 
   .intro-other-items {
-    display: flex;
-    justify-content: space-between;
 
-    margin: 0;
-    padding: 0;
+    .intro-other-items-item {
 
-    text-align: center;
-    list-style: none;
-
-    h3 {
-      font-size: 21px;
-    }
-
-    .intro-item {
-      width: 400px;
     }
   }
 }
 
 .appointment-info {
-  text-align: center;
 
-  h2 {
-    font-size: 30px;
-    line-height: 36px;
-  }
-  p {
-    line-height: 24px;
-  }
 }
+
+
