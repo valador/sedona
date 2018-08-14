@@ -5,7 +5,11 @@
     "express": "^4.16.3"
   },
   "scripts": {
-    "start": "http-server"
+    "start1": "http-server",
+    "start": "npm-run-all --parallel liveserver watch --open=/static",
+    "liveserver": "live-server",
+    "watch": "node-sass sass/main.scss static/css/main.css -w",
+    "build": "node-sass sass/main.scss static/css/main.css --output-style compressed"
   },
   "description": "",
   "main": "server.js",
@@ -18,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/valador/barbershop/issues"
   },
-  "homepage": "https://github.com/valador/barbershop#readme"
+  "homepage": "https://github.com/valador/barbershop#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3"
+  }
 }

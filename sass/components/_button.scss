@@ -1,0 +1,36 @@
+.button {
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  background-color: #81b3d2;
+  border: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:focus,
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.search-hotel-button {
+  font-size: 21px;
+  color: #ffffff;
+
+  width: 576px;
+  height: 86px;
+
+  background-color: #766357;
+
+  &:hover {
+    background-color: #604e43;
+  }
+  &:focus,
+  &:active {
+    background-color: #503e33;
+  }
+}
