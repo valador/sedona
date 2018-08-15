@@ -43,6 +43,12 @@
     li {
       width: 400px;
       padding: 50px 70px;
+      h3 {
+        font-size: 21px;
+      }
+      p {
+        color: color('gray');
+      }
     }
 
   }
@@ -55,6 +61,7 @@
 
 .intro-other {
   background-color: color('bg-white');
+  margin-bottom: 60px;
 
   .intro-other-items {
     display: flex;
@@ -64,12 +71,29 @@
 
     li {
       width: 400px;
-      padding: 50px 70px;
+      padding: 47px 70px;
+
+      h3 {
+        font-size: 21px;
+      }
+      p {
+        color: color('gray');
+      }
     }
   }
 }
 
 .appointment-info {
+
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  p {
+    color: color('gray');
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
 
 }
 

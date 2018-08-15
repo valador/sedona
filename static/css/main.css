@@ -44,7 +44,6 @@ input[type="radio"].visually-hidden {
 .obertka {
   width: 400px;
   color: #ffffff;
-  background-color: #81b3d2;
   margin: 0;
   padding: 47px 49px; }
   .obertka h2 {
@@ -73,6 +72,38 @@ input[type="radio"].visually-hidden {
       line-height: 26px;
       font-weight: bold;
       color: #000000; }
+
+.button {
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle; }
+
+.search-hotel-button {
+  width: 570px;
+  margin: 0;
+  padding: 32px 137px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357; }
+  .search-hotel-button:hover {
+    background-color: #604e43; }
+  .search-hotel-button:focus {
+    background-color: #503e33; }
+  .search-hotel-button:active {
+    background-color: #503e33; }
+
+.appointment-submit-button {
+  background-color: #81b3d2; }
+  .appointment-submit-button:hover {
+    background-color: #669ec0; }
+  .appointment-submit-button:focus {
+    background-color: #5496bd; }
+  .appointment-submit-button:active {
+    background-color: #5496bd; }
 
 .welcome-banner {
   margin-bottom: 60px;
@@ -107,12 +138,17 @@ input[type="radio"].visually-hidden {
   .services .services-list li {
     width: 400px;
     padding: 50px 70px; }
+    .services .services-list li h3 {
+      font-size: 21px; }
+    .services .services-list li p {
+      color: #333333; }
 
 .intro-two {
   display: flex; }
 
 .intro-other {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  margin-bottom: 60px; }
   .intro-other .intro-other-items {
     display: flex;
     list-style: none;
@@ -120,4 +156,17 @@ input[type="radio"].visually-hidden {
     margin: 0; }
     .intro-other .intro-other-items li {
       width: 400px;
-      padding: 50px 70px; }
+      padding: 47px 70px; }
+      .intro-other .intro-other-items li h3 {
+        font-size: 21px; }
+      .intro-other .intro-other-items li p {
+        color: #333333; }
+
+.appointment-info h2 {
+  font-size: 30px;
+  line-height: 36px; }
+
+.appointment-info p {
+  color: #333333;
+  line-height: 24px;
+  margin-bottom: 35px; }

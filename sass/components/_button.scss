@@ -1,0 +1,43 @@
+.button {
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.search-hotel-button {
+  width: 570px;
+  margin: 0;
+  padding: 32px 137px;
+
+  font-size: 21px;
+  line-height: 26px;
+  color: color('white');
+  background-color: color('brown');
+
+  &:hover {
+    background-color: color('brown-hover')
+  }
+  &:focus {
+    background-color: color('brown-active')
+  }
+  &:active {
+    background-color: color('brown-active')
+  }
+}
+
+.appointment-submit-button {
+  background-color: color('blue');
+
+  &:hover {
+    background-color: color('blue-hover')
+  }
+  &:focus {
+    background-color: color('blue-active')
+  }
+  &:active {
+    background-color: color('blue-active')
+  }
+}
