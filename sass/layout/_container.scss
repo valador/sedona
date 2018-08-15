@@ -1,7 +1,27 @@
+.container-big {
+  width: 1280px;
+  margin: 0;
+  padding: 0;
+
+  background-color: color('textfield-container');
+}
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
-  background-color: ;
+
+  background-color: color('white');
+}
+
+.obertka {
+  width: 400px;
+  color: color('white');
+  background-color: color('blu');
+
+  margin: 0;
+  padding: 47px 49px;
+
+  h2 {
+    font-size: 21px;
+  }
 
 }

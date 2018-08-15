@@ -1,28 +1,70 @@
+.welcome-banner {
+  margin-bottom: 60px;
+
+  width: 100%;
+  height: 509px;
+  background-color: #00367cdc;
+  background-image: url("../img/stripe.png"), url("../img/banner-text.png"), url("../img/intro-bg.jpg");
+  background-position: bottom center, center center, top center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, auto, cover;
+}
+
 .intro {
+  margin-bottom: 57px;
+
+  h2 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+  p {
+    color: color('gray');
+    line-height: 26px;
+  }
 
 }
 
 .intro-uno {
+  padding: 0;
+  margin: 0;
+  display: flex;
 
 }
 
 .services {
 
   .services-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      width: 400px;
+      padding: 50px 70px;
+    }
 
   }
 }
 
 .intro-two {
+  display: flex;
 
 }
 
 .intro-other {
+  background-color: color('bg-white');
 
   .intro-other-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-    .intro-other-items-item {
-
+    li {
+      width: 400px;
+      padding: 50px 70px;
     }
   }
 }

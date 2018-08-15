@@ -1,9 +1,36 @@
 .main-navigation {
 
   .main-header-logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 138px;
+    height: 70px;
 
   }
   .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    li {
+      padding: 15px 70px;
+
+      &:nth-child(3) {
+        margin-left: auto;
+      }
+      a {
+        line-height: 26px;
+        font-weight: bold;
+
+        color: color('black');
+      }
+    }
   }
 }

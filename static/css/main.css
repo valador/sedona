@@ -6,7 +6,8 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 a {
   text-decoration: none; }
@@ -29,8 +30,94 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0; }
 
+.container-big {
+  width: 1280px;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; }
+
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
-  background-color: #f2f2f2; }
+  background-color: #ffffff; }
+
+.obertka {
+  width: 400px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin: 0;
+  padding: 47px 49px; }
+  .obertka h2 {
+    font-size: 21px; }
+
+.main-navigation .main-header-logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 138px;
+  height: 70px; }
+
+.main-navigation .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .main-navigation .site-navigation li {
+    padding: 15px 70px; }
+    .main-navigation .site-navigation li:nth-child(3) {
+      margin-left: auto; }
+    .main-navigation .site-navigation li a {
+      line-height: 26px;
+      font-weight: bold;
+      color: #000000; }
+
+.welcome-banner {
+  margin-bottom: 60px;
+  width: 100%;
+  height: 509px;
+  background-color: #00367cdc;
+  background-image: url("../img/stripe.png"), url("../img/banner-text.png"), url("../img/intro-bg.jpg");
+  background-position: bottom center, center center, top center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, auto, cover; }
+
+.intro {
+  margin-bottom: 57px; }
+  .intro h2 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold; }
+  .intro p {
+    color: #333333;
+    line-height: 26px; }
+
+.intro-uno {
+  padding: 0;
+  margin: 0;
+  display: flex; }
+
+.services .services-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .services .services-list li {
+    width: 400px;
+    padding: 50px 70px; }
+
+.intro-two {
+  display: flex; }
+
+.intro-other {
+  background-color: #eeeeee; }
+  .intro-other .intro-other-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .intro-other .intro-other-items li {
+      width: 400px;
+      padding: 50px 70px; }

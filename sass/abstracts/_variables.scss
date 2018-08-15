@@ -4,6 +4,7 @@
 //Цвета
 $colors: (
   'white': #ffffff,
+  'black': #000000,
   'textfield-container': #f2f2f2,
   'textfield-hover': #ebebeb,
   'bg-white': #eeeeee,
@@ -13,7 +14,8 @@ $colors: (
   'brown': #766357,
   'brown-hover': #604e43,
   'brown-active': #503e33,
-  'footer-white': #f9fbf6
+  'footer-white': #f9fbf6,
+  'gray': #333333
 );
 
 @function color($key) {
