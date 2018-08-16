@@ -29,6 +29,10 @@
 }
 
 .appointment-submit-button {
+  width: 460px;
+  height: 60px;
+  line-height: 26px;
+  font-size: 21px;
   background-color: color('blue');
 
   &:hover {

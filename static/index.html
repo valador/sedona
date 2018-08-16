@@ -104,19 +104,29 @@
     <section class="modal-appointment modal">
       <h2 class="visually-hidden">Бронирование</h2>
       <form class="appointment-form" action="#" method="post">
+        <p>
       <label for="incoming-date">Дата заезда:</label>
         <input type="date" name="incoming-date" id="incoming-date"><br>
+        </p>
+        <p>
       <label for="outgoing-date">Дата выезда:</label>
         <input type="date" name="outgoing-date" id="outgoing-date"><br>
+        </p>
+        <div class="form-obertka">
+        <p>
       <label for="adult-count">Взрослые</label>
         <input class="btn-minus" type="button" value="-">
         <input id="adult-count" type="text" placeholder="0">
         <input class="btn-plus" type="button" value="+">
+        </p>
+        <p>
       <label for="chield-count">Дети</label>
         <input class="btn-minus" type="button" value="-">
         <input id="chield-count" type="text" placeholder="0">
         <input class="btn-plus" type="button" value="+"><br>
-      <button class="button appointment-submit-button" type="submit">Найти</button>
+        </p>
+        </div>
+        <button class="button appointment-submit-button" type="submit">Найти</button>
       </form>
     </section>
 

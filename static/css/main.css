@@ -44,6 +44,7 @@ input[type="radio"].visually-hidden {
 .obertka {
   width: 400px;
   color: #ffffff;
+  background-color: #81b3d2;
   margin: 0;
   padding: 47px 49px; }
   .obertka h2 {
@@ -97,6 +98,10 @@ input[type="radio"].visually-hidden {
     background-color: #503e33; }
 
 .appointment-submit-button {
+  width: 460px;
+  height: 60px;
+  line-height: 26px;
+  font-size: 21px;
   background-color: #81b3d2; }
   .appointment-submit-button:hover {
     background-color: #669ec0; }
@@ -104,6 +109,47 @@ input[type="radio"].visually-hidden {
     background-color: #5496bd; }
   .appointment-submit-button:active {
     background-color: #5496bd; }
+
+.appointment-form {
+  width: 570px;
+  margin: 0;
+  padding: 55px 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .appointment-form p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px; }
+    .appointment-form p input {
+      width: 347px;
+      height: 40px; }
+  .appointment-form label {
+    line-height: 26px;
+    font-weight: 700; }
+  .appointment-form input {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    border: 0 solid #ffffff;
+    background-color: #f2f2f2; }
+    .appointment-form input:hover {
+      background-color: #ebebeb; }
+    .appointment-form input:focus {
+      background-color: #ffffff; }
+  .appointment-form .form-obertka {
+    display: flex;
+    margin-bottom: 56px; }
+    .appointment-form .form-obertka p {
+      margin: 0; }
+      .appointment-form .form-obertka p:nth-child(2) {
+        margin-left: 50px; }
+      .appointment-form .form-obertka p input {
+        width: 50px;
+        height: 40px;
+        align-items: center;
+        margin: 0;
+        padding: 0; }
 
 .welcome-banner {
   margin-bottom: 60px;
