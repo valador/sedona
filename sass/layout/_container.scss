@@ -25,3 +25,21 @@
   }
 
 }
+
+.form-obertka {
+  display: flex;
+
+  p:first-child {
+    label {
+      margin-right: 40px;
+    }
+    .btn-plus {
+      margin-right: 51px;
+    }
+  }
+  p:last-child {
+    label {
+      margin-right: 27px;
+    }
+  }
+}

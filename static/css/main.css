@@ -50,6 +50,15 @@ input[type="radio"].visually-hidden {
   .obertka h2 {
     font-size: 21px; }
 
+.form-obertka {
+  display: flex; }
+  .form-obertka p:first-child label {
+    margin-right: 40px; }
+  .form-obertka p:first-child .btn-plus {
+    margin-right: 51px; }
+  .form-obertka p:last-child label {
+    margin-right: 27px; }
+
 .main-navigation .main-header-logo {
   position: absolute;
   left: 50%;
@@ -110,6 +119,11 @@ input[type="radio"].visually-hidden {
   .appointment-submit-button:active {
     background-color: #5496bd; }
 
+.btn-minus,
+.btn-plus {
+  height: 16px;
+  width: 16px; }
+
 .appointment-form {
   width: 570px;
   margin: 0;
@@ -117,9 +131,17 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .appointment-form 38 346
-input {
-    font: inherit; }
+  .appointment-form input {
+    font: inherit;
+    border: none; }
+  .appointment-form input[type="date"] {
+    width: 346px;
+    height: 38px;
+    margin-left: 20px;
+    background-color: #f2f2f2; }
+  .appointment-form input[type="text"] {
+    width: 13px;
+    height: 13px; }
   .appointment-form p label {
     font-weight: 700;
     line-height: 26px; }
