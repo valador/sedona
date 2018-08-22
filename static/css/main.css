@@ -30,6 +30,29 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0; }
 
+.main-footer {
+  display: flex;
+  height: 120px;
+  justify-content: space-around;
+  align-items: center; }
+  .main-footer .tag {
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 21px; }
+  .main-footer .footer-social {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .main-footer .footer-social li:nth-child(2) {
+      margin-left: 6px;
+      margin-right: 6px; }
+  .main-footer .developer {
+    display: flex;
+    align-items: center; }
+    .main-footer .developer span {
+      margin-right: 6px; }
+
 .container-big {
   width: 1280px;
   margin: 0;
@@ -51,7 +74,8 @@ input[type="radio"].visually-hidden {
     font-size: 21px; }
 
 .form-obertka {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
   .form-obertka p:first-child label {
     margin-right: 40px; }
   .form-obertka p:first-child .btn-plus {
@@ -124,6 +148,14 @@ input[type="radio"].visually-hidden {
   height: 16px;
   width: 16px; }
 
+.social-button {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #81b3d2; }
+
 .appointment-form {
   width: 570px;
   margin: 0;
@@ -161,10 +193,13 @@ input[type="radio"].visually-hidden {
   .intro h2 {
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 36px; }
   .intro p {
     color: #333333;
-    line-height: 26px; }
+    line-height: 26px;
+    margin: 0;
+    padding: 0; }
 
 .intro-uno {
   padding: 0;

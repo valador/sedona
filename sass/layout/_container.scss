@@ -28,6 +28,8 @@
 
 .form-obertka {
   display: flex;
+  flex-direction: column;
+
 
   p:first-child {
     label {

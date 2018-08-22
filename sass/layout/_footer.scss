@@ -1,11 +1,31 @@
 .main-footer {
+  display: flex;
+  height: 120px;
+  justify-content: space-around;
+  align-items: center;
+
   .tag {
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 21px;
 
   }
   .footer-social {
+    display: flex;
+    margin: 0;
+    padding: 0;
 
+    list-style: none;
+    li:nth-child(2) {
+      margin-left: 6px;
+      margin-right: 6px;
+    }
   }
   .developer {
-
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 6px;
+    }
   }
 }
