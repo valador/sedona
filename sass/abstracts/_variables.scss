@@ -15,7 +15,8 @@ $colors: (
   'brown-hover': #604e43,
   'brown-active': #503e33,
   'footer-white': #f9fbf6,
-  'gray': #333333
+  'gray': #333333,
+  'shadow-cont': #000101
 );
 
 @function color($key) {

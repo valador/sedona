@@ -62,16 +62,21 @@ input[type="radio"].visually-hidden {
 .container {
   width: 1200px;
   margin: 0 auto;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2); }
 
 .obertka {
   width: 400px;
-  color: #ffffff;
-  background-color: #81b3d2;
-  margin: 0;
-  padding: 47px 49px; }
+  margin: 47px 50px 40px;
+  padding: 0; }
   .obertka h2 {
-    font-size: 21px; }
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px; }
+  .obertka p {
+    margin-top: 22px;
+    padding: 0; }
 
 .form-obertka {
   display: flex;
@@ -189,12 +194,12 @@ input[type="radio"].visually-hidden {
   background-size: contain, auto, cover; }
 
 .intro {
-  margin-bottom: 57px; }
+  margin-bottom: 50px; }
   .intro h2 {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    margin-bottom: 36px; }
+    margin-bottom: 27px; }
   .intro p {
     color: #333333;
     line-height: 26px;
@@ -204,23 +209,34 @@ input[type="radio"].visually-hidden {
 .intro-uno {
   padding: 0;
   margin: 0;
-  display: flex; }
+  display: flex;
+  color: #ffffff;
+  background-color: #81b3d2; }
 
 .services .services-list {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0; }
+  .services .services-list img {
+    margin-bottom: 24px; }
   .services .services-list li {
     width: 400px;
-    padding: 50px 70px; }
+    padding: 58px 53px 80px; }
     .services .services-list li h3 {
-      font-size: 21px; }
+      font-size: 21px;
+      margin: 0;
+      margin-bottom: 27px;
+      padding: 0; }
     .services .services-list li p {
-      color: #333333; }
+      color: #333333;
+      margin: 0;
+      padding: 0; }
 
 .intro-two {
-  display: flex; }
+  display: flex;
+  color: #ffffff;
+  background-color: #81b3d2; }
 
 .intro-other {
   background-color: #eeeeee;

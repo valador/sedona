@@ -11,17 +11,19 @@
 }
 
 .intro {
-  margin-bottom: 57px;
+  margin-bottom: 50px;
 
   h2 {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    margin-bottom: 36px;
+
+    margin-bottom: 27px;
   }
   p {
     color: color('gray');
     line-height: 26px;
+
     margin: 0;
     padding: 0;
   }
@@ -32,6 +34,8 @@
   padding: 0;
   margin: 0;
   display: flex;
+  color: color('white');
+  background-color: color('blue');
 
 }
 
@@ -42,15 +46,23 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    img {
+      margin-bottom: 24px;
+    }
 
     li {
       width: 400px;
-      padding: 50px 70px;
+      padding: 58px 53px 80px;
       h3 {
         font-size: 21px;
+        margin: 0;
+        margin-bottom: 27px;
+        padding: 0;
       }
       p {
         color: color('gray');
+        margin: 0;
+        padding: 0;
       }
     }
 
@@ -59,6 +71,8 @@
 
 .intro-two {
   display: flex;
+  color: color('white');
+  background-color: color('blue');
 
 }
 
