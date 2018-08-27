@@ -16,7 +16,8 @@ $colors: (
   'brown-active': #503e33,
   'footer-white': #f9fbf6,
   'gray': #333333,
-  'shadow-cont': #000101
+  'shadow-cont': #000101,
+  'nav-current': #766357
 );
 
 @function color($key) {

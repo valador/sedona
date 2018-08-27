@@ -25,6 +25,9 @@
       &:nth-child(3) {
         margin-left: auto;
       }
+      .site-navigation-current {
+        color: color('nav-current');
+      }
       a {
         line-height: 26px;
         font-weight: bold;

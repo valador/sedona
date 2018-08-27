@@ -1,0 +1,25 @@
+.inner-page {
+  .filter {
+    padding-left: 72px;
+  }
+
+  .sorting {
+    display: flex;
+    padding-left: 72px;
+
+    span {
+      font-size: 21px;
+      line-height: 26px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400;
+    }
+
+    ul {
+      list-style: none;
+    }
+  }
+}

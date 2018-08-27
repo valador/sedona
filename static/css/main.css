@@ -62,6 +62,7 @@ input[type="radio"].visually-hidden {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 75 0;
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2); }
 
@@ -107,6 +108,8 @@ input[type="radio"].visually-hidden {
     padding: 15px 70px; }
     .main-navigation .site-navigation li:nth-child(3) {
       margin-left: auto; }
+    .main-navigation .site-navigation li .site-navigation-current {
+      color: #766357; }
     .main-navigation .site-navigation li a {
       line-height: 26px;
       font-weight: bold;
@@ -182,6 +185,39 @@ input[type="radio"].visually-hidden {
   .appointment-form p label {
     font-weight: 700;
     line-height: 26px; }
+
+.filter {
+  display: flex;
+  background-color: #ffffff;
+  background-image: url("../img/filter-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat; }
+  .filter fieldset {
+    border: none;
+    margin: 0;
+    padding: 0; }
+  .filter legend {
+    font-weight: 700;
+    font-size: 16px; }
+  .filter ul li {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px; }
+  .filter .filter-infrastructure {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .filter .filter-quarters-type {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .filter .cost-per-day-filter {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+.modal-appointment {
+  background-color: #ffffff; }
 
 .welcome-banner {
   margin-bottom: 60px;
@@ -262,3 +298,20 @@ input[type="radio"].visually-hidden {
   color: #333333;
   line-height: 24px;
   margin-bottom: 35px; }
+
+.inner-page .filter {
+  padding-left: 72px; }
+
+.inner-page .sorting {
+  display: flex;
+  padding-left: 72px; }
+  .inner-page .sorting span {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold; }
+  .inner-page .sorting h2 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400; }
+  .inner-page .sorting ul {
+    list-style: none; }
