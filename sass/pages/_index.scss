@@ -46,17 +46,15 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    img {
-      margin-bottom: 24px;
-    }
 
     li {
       width: 400px;
-      padding: 58px 53px 80px;
+      padding: 160px 53px 80px;
       h3 {
+        position: relative;
         font-size: 21px;
         margin: 0;
-        margin-bottom: 27px;
+        margin-bottom: 24px;
         padding: 0;
       }
       p {
@@ -64,6 +62,42 @@
         margin: 0;
         padding: 0;
       }
+    }
+    li:first-child h3::before {
+      content: "";
+
+      top: -99px;
+      margin-left: -4px;
+
+      position: absolute;
+      width: 75px;
+      height: 72px;
+
+      background-image: url("../img/icon-1.png");
+    }
+    li:nth-child(2) h3::before {
+      content: "";
+
+      top: -99px;
+      margin-left: -20px;
+
+      position: absolute;
+      width: 74px;
+      height: 70px;
+
+      background-image: url("../img/icon-3.png");
+    }
+    li:last-child h3::before {
+      content: "";
+
+      top: -105px;
+      margin-left: 19px;
+
+      position: absolute;
+      width: 64px;
+      height: 76px;
+
+      background-image: url("../img/icon-2.png");
     }
 
   }
