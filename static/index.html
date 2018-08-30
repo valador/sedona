@@ -98,11 +98,12 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предпологаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button search-hotel-button">Поиск гостиницы в Седоне</button>
+      <button id="open-modal" class="button search-hotel-button">Поиск гостиницы в Седоне</button>
     </section>
 
-    <section class="modal-appointment modal">
+    <section id="appointment-modal" class="modal-appointment modal">
       <h2 class="visually-hidden">Бронирование</h2>
+      <span class="close"></span>
       <form class="appointment-form" action="#" method="post">
         <p>
       <label for="incoming-date">Дата заезда:</label>
@@ -172,5 +173,6 @@
       <img src="img/developer.png" alt="Разработчик">
     </div>
   </footer>
+  <script src="js/main.js"></script>
   </body>
 </html>

@@ -362,7 +362,6 @@ input[type="radio"].visually-hidden {
   margin: 47px 55px 40px; }
   .obertka h2 {
     font-size: 21px;
-    margin: 0;
     padding: 0 40px;
     margin-bottom: 23px; }
   .obertka p {
@@ -416,7 +415,7 @@ input[type="radio"].visually-hidden {
 .search-hotel-button {
   width: 570px;
   margin: 0;
-  padding: 32px 137px;
+  padding: 30px 137px;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
@@ -511,8 +510,38 @@ input[type="radio"].visually-hidden {
 .modal-appointment {
   background-color: #ffffff; }
 
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 0;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; }
+
 .welcome-banner {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   width: 100%;
   height: 509px;
   background-color: #00367cdc;
@@ -540,6 +569,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   color: #ffffff;
   background-color: #81b3d2; }
+  .intro-uno .obertka h2 {
+    padding: 0 70px; }
 
 .services .services-list {
   display: flex;
@@ -588,10 +619,16 @@ input[type="radio"].visually-hidden {
   display: flex;
   color: #ffffff;
   background-color: #81b3d2; }
+  .intro-two .obertka {
+    margin: 47px 45px 40px; }
+    .intro-two .obertka h2 {
+      padding: 0 80px; }
+    .intro-two .obertka p {
+      padding: 0; }
 
 .intro-other {
   background-color: #eeeeee;
-  margin-bottom: 60px; }
+  margin-bottom: 48px; }
   .intro-other .intro-other-items {
     display: flex;
     list-style: none;
@@ -599,20 +636,24 @@ input[type="radio"].visually-hidden {
     margin: 0; }
     .intro-other .intro-other-items li {
       width: 400px;
-      padding: 47px 70px; }
+      padding: 50px 68px 60px; }
       .intro-other .intro-other-items li h3 {
-        font-size: 21px; }
+        font-size: 21px;
+        margin-bottom: 25px;
+        padding: 0 55px; }
       .intro-other .intro-other-items li p {
-        color: #333333; }
+        color: #333333;
+        margin-top: 20px; }
 
 .appointment-info h2 {
   font-size: 30px;
-  line-height: 36px; }
+  line-height: 36px;
+  margin-bottom: 28px; }
 
 .appointment-info p {
   color: #333333;
   line-height: 24px;
-  margin-bottom: 35px; }
+  margin-bottom: 43px; }
 
 .inner-page .filter {
   padding-left: 72px; }
