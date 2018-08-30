@@ -1,11 +1,10 @@
 .inner-page {
   .filter {
-    padding-left: 72px;
   }
 
   .sorting {
     display: flex;
-    padding-left: 72px;
+    margin-left: 72px;
 
     span {
       font-size: 21px;
@@ -21,5 +20,8 @@
     ul {
       list-style: none;
     }
+  }
+  .results {
+    margin-left: 72px;
   }
 }
