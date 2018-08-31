@@ -1,5 +1,9 @@
 .inner-page {
-  .filter {
+  .filters {
+    .filter {
+      padding-top: 28px;
+      padding-bottom: 10px;
+    }
   }
 
   .sorting {
@@ -23,5 +27,38 @@
   }
   .results {
     margin-left: 72px;
+  }
+}
+
+.filter-input-checkbox {
+
+  & + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../img/checkbox-off.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:checked + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 27px;
+    height: 23px;
+
+    background-image: url("../img/checkbox-on.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
   }
 }

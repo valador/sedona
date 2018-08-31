@@ -31,6 +31,8 @@
 .filter {
   display: flex;
 
+  color: color('white');
+
   background-color: #ffffff;
   background-image: url("../img/filter-bg.jpg");
   background-position: top center;
@@ -41,36 +43,77 @@
     margin: 0;
     padding: 0;
   }
+
   legend {
     font-weight: 700;
     font-size: 16px;
+    margin-bottom: 25px;
+    text-align: left;
   }
+
   ul {
+
     li {
       padding: 0;
       margin: 0;
-      margin-bottom: 30px;
+      margin-bottom: 23px;
+
+      label {
+
+      }
     }
   }
-  .filter-field-infrastructure {
-    margin-left: 72px;
+
+  ul > .filter-option {
+    position: relative;
+    padding-left: 40px;
+    text-align: left;
   }
+
+  .filter-field-infrastructure {
+    margin-left: 71px;
+  }
+
   .filter-infrastructure {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  .filter-quarters-type {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .cost-per-day-filter {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+  .filter-field-quarters {
+    margin-left: 125px;
+
+    .filter-quarters-type {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
   }
   .cost-per-day-field {
     margin-left: auto;
+    margin-right: 74px;
+
+    legend {
+      margin-bottom: 11px;
+    }
+
+  .cost-per-day-filter {
+    display: flex;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    border: 2px solid color('white');
+
+    li:first-child {
+      border-right: ;
+    }
+
+    .filter-option-cost {
+      width: 160px;
+    }
+  }
   }
 }

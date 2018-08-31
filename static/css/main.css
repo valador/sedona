@@ -263,14 +263,18 @@ svg {
   display: block;
   clear: both; }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  z-index: -1;
-  width: 0;
-  height: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-  margin: 0;
-  border: none;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden; }
 
 .cover-pic,
@@ -389,11 +393,10 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none; }
   .main-navigation .site-navigation li {
-    padding: 15px 70px 15px 70px; }
-    .main-navigation .site-navigation li:first-child {
-      padding: 15px 70px 15px 72px; }
+    padding: 15px 72px 15px 72px; }
     .main-navigation .site-navigation li:nth-child(3) {
-      margin-left: auto; }
+      margin-left: auto;
+      margin-right: 18px; }
     .main-navigation .site-navigation li .site-navigation-current {
       color: #766357; }
     .main-navigation .site-navigation li a {
@@ -474,6 +477,7 @@ input[type="radio"].visually-hidden {
 
 .filter {
   display: flex;
+  color: #ffffff;
   background-color: #ffffff;
   background-image: url("../img/filter-bg.jpg");
   background-position: top center;
@@ -484,27 +488,43 @@ input[type="radio"].visually-hidden {
     padding: 0; }
   .filter legend {
     font-weight: 700;
-    font-size: 16px; }
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: left; }
   .filter ul li {
     padding: 0;
     margin: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 23px; }
+  .filter ul > .filter-option {
+    position: relative;
+    padding-left: 40px;
+    text-align: left; }
   .filter .filter-field-infrastructure {
-    margin-left: 72px; }
+    margin-left: 71px; }
   .filter .filter-infrastructure {
     list-style: none;
     margin: 0;
     padding: 0; }
-  .filter .filter-quarters-type {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .filter .cost-per-day-filter {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
+  .filter .filter-field-quarters {
+    margin-left: 125px; }
+    .filter .filter-field-quarters .filter-quarters-type {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
   .filter .cost-per-day-field {
-    margin-left: auto; }
+    margin-left: auto;
+    margin-right: 74px; }
+    .filter .cost-per-day-field legend {
+      margin-bottom: 11px; }
+    .filter .cost-per-day-field .cost-per-day-filter {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 32px;
+      border: 2px solid #ffffff; }
+      .filter .cost-per-day-field .cost-per-day-filter .filter-option-cost {
+        width: 160px; }
 
 .modal-appointment {
   background-color: #ffffff; }
@@ -654,6 +674,10 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   margin-bottom: 43px; }
 
+.inner-page .filters .filter {
+  padding-top: 28px;
+  padding-bottom: 10px; }
+
 .inner-page .sorting {
   display: flex;
   margin-left: 72px; }
@@ -670,3 +694,27 @@ input[type="radio"].visually-hidden {
 
 .inner-page .results {
   margin-left: 72px; }
+
+.filter-input-checkbox + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
