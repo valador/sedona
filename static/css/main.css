@@ -475,56 +475,68 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     line-height: 26px; }
 
-.filter {
-  display: flex;
-  color: #ffffff;
-  background-color: #ffffff;
-  background-image: url("../img/filter-bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat; }
-  .filter fieldset {
-    border: none;
-    margin: 0;
-    padding: 0; }
-  .filter legend {
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 25px;
-    text-align: left; }
-  .filter ul li {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 23px; }
-  .filter ul > .filter-option {
-    position: relative;
-    padding-left: 40px;
-    text-align: left; }
-  .filter .filter-field-infrastructure {
-    margin-left: 71px; }
-  .filter .filter-infrastructure {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .filter .filter-field-quarters {
-    margin-left: 125px; }
-    .filter .filter-field-quarters .filter-quarters-type {
-      list-style: none;
+.filters {
+  margin-bottom: 31px; }
+  .filters .filter {
+    display: flex;
+    color: #ffffff;
+    background-color: #ffffff;
+    background-image: url("../img/filter-bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat; }
+    .filters .filter fieldset {
+      border: none;
       margin: 0;
       padding: 0; }
-  .filter .cost-per-day-field {
-    margin-left: auto;
-    margin-right: 74px; }
-    .filter .cost-per-day-field legend {
-      margin-bottom: 11px; }
-    .filter .cost-per-day-field .cost-per-day-filter {
-      display: flex;
-      list-style: none;
-      margin: 0;
+    .filters .filter legend {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 25px;
+      text-align: left; }
+    .filters .filter .filter-option {
       padding: 0;
-      height: 32px;
-      border: 2px solid #ffffff; }
-      .filter .cost-per-day-field .cost-per-day-filter .filter-option-cost {
-        width: 160px; }
+      margin: 0;
+      margin-bottom: 23px;
+      position: relative;
+      padding-left: 40px;
+      text-align: left; }
+    .filters .filter .filter-field-infrastructure {
+      margin-left: 71px; }
+      .filters .filter .filter-field-infrastructure .filter-infrastructure {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+    .filters .filter .filter-field-quarters {
+      margin-left: 125px; }
+      .filters .filter .filter-field-quarters .filter-quarters-type {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+    .filters .filter .cost-per-day-field {
+      margin-left: auto;
+      margin-right: 74px; }
+      .filters .filter .cost-per-day-field legend {
+        margin-bottom: 11px; }
+      .filters .filter .cost-per-day-field .cost-per-day-filter {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: 2px solid #ffffff;
+        width: 320px; }
+        .filters .filter .cost-per-day-field .cost-per-day-filter .filter-option-cost {
+          width: 160px;
+          position: relative; }
+          .filters .filter .cost-per-day-field .cost-per-day-filter .filter-option-cost input:focus {
+            background-color: yellow; }
+          .filters .filter .cost-per-day-field .cost-per-day-filter .filter-option-cost:first-child::after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            top: 3px;
+            bottom: 3px;
+            width: 2px;
+            background: #ffffff; }
 
 .modal-appointment {
   background-color: #ffffff; }
