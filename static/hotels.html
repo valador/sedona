@@ -73,20 +73,20 @@
         <legend>Стоимость в сутки (Р):</legend>
         <ul class="cost-per-day-filter">
           <li class="filter-option-cost">
-            <label for="min-cost">От</label>
-            <input class="visually-hidden filter-input" type="text" name="min-cost" id="min-cost" value="0">
+            <label class="visually-hidden" for="min-cost">От 0</label>
+            <input class="filter-input" type="text" placeholder="От 0" name="min-cost" id="min-cost">
           </li>
           <li class="filter-option-cost">
-            <label for="max-cost">До</label>
-            <input class="visually-hidden filter-input" type="text" name="max-cost" id="max-cost" value="3000">
+            <label class="visually-hidden" for="max-cost">До 3000</label>
+            <input class="filter-input" type="text" placeholder="До 3000" name="max-cost" id="max-cost">
           </li>
         </ul>
-        <div class="range-controls">
-          <div class="scale">
-            <div class="bar"></div>
-          </div>
-          <div class="range-toggle range-toggle-min"></div>
-          <div class="range-toggle range-toggle-max"></div>
+        <label class="visually-hidden" for="my-min-range">Ползунок выбора минимальной стоимости</label>
+        <label class="visually-hidden" for="my-max-range">Ползунок выбора максимальной стоимости</label>
+        <div class="slider-container" data-lbound='100' data-ubound='200'>
+          <hr />
+          <input type="range" min="0" max="2900" step="100" value="100" class="slider" id="my-min-range" oninput='this.parentNode.dataset.lbound=this.value;'>
+          <input type="range" min="200" max="3000" step="100" value="200" class="slider" id="my-max-range" oninput='this.parentNode.dataset.ubound=this.value;'>
         </div>
         <button class="button filters-submit-button" type="submit">Показать</button>
       </fieldset>
