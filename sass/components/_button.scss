@@ -11,20 +11,21 @@
   width: 570px;
   margin: 0;
   padding: 30px 137px;
-
   font-size: 21px;
   line-height: 26px;
   color: color('white');
   background-color: color('brown');
 
   &:hover {
-    background-color: color('brown-hover')
+    background-color: color('brown-hover');
   }
+
   &:focus {
-    background-color: color('brown-active')
+    background-color: color('brown-active');
   }
+
   &:active {
-    background-color: color('brown-active')
+    background-color: color('brown-active');
   }
 }
 
@@ -36,13 +37,15 @@
   background-color: color('blue');
 
   &:hover {
-    background-color: color('blue-hover')
+    background-color: color('blue-hover');
   }
+
   &:focus {
-    background-color: color('blue-active')
+    background-color: color('blue-active');
   }
+
   &:active {
-    background-color: color('blue-active')
+    background-color: color('blue-active');
   }
 }
 
@@ -55,7 +58,6 @@
 .social-button {
   width: 46px;
   height: 48px;
-
   display: flex;
   align-items: center;
   justify-content: center;

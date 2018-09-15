@@ -1,6 +1,7 @@
 .modal-appointment {
   background-color: color('white');
 }
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -19,6 +20,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+
   &:hover,
   &:focus {
     color: black;

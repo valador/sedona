@@ -5,22 +5,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   input {
     font: inherit;
     border: none;
   }
+
   input[type="date"] {
     width: 346px;
     height: 38px;
     margin-left: 20px;
     background-color: color('textfield-container');
   }
+
   input[type="text"] {
     width: 13px;
     height: 13px;
   }
-  p {
 
+  p {
     label {
       font-weight: 700;
       line-height: 26px;
@@ -30,26 +33,28 @@
 
 .filters {
   margin-bottom: 31px;
+
   .filter {
     display: flex;
-
     color: color('white');
-
     background-color: #ffffff;
     background-image: url("../img/filter-bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+
     fieldset {
       border: none;
       margin: 0;
       padding: 0;
     }
+
     legend {
       font-weight: 700;
       font-size: 16px;
       margin-bottom: 25px;
       text-align: left;
     }
+
     .filter-option {
       padding: 0;
       margin: 0;
@@ -58,6 +63,7 @@
       padding-left: 40px;
       text-align: left;
     }
+
     .filter-field-infrastructure {
       margin-left: 71px;
 
@@ -67,14 +73,17 @@
         padding: 0;
       }
     }
+
     .filter-field-quarters {
       margin-left: 125px;
+
       .filter-quarters-type {
         list-style: none;
         margin: 0;
         padding: 0;
       }
     }
+
     .cost-per-day-field {
       margin-left: auto;
       margin-right: 74px;
@@ -92,13 +101,10 @@
         width: 320px;
         margin-bottom: 22px;
 
-
         .filter-option-cost {
           width: 160px;
           position: relative;
 
-          input:focus {
-          }
           .filter-input {
             text-align: center;
             height: 32px;
@@ -115,16 +121,17 @@
           }
         }
       }
+
       .slider-container {
-        margin-bottom: 34px;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        margin-bottom: 34px;
       }
     }
   }
 }
 
-/*.slider-container, .slider-container *
+/*  .slider-container, .slider-container *
 {
   box-sizing: border-box;
   padding: 0;
@@ -152,4 +159,4 @@
   display: block; padding: 0px 4px; margin: -1px 2px;
   height: 26px; width: auto; border: 1px solid #ddd;
   font-size: 13px; line-height: 26px;
-}*/
+} */

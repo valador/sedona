@@ -1,6 +1,5 @@
 .welcome-banner {
   margin-bottom: 58px;
-
   width: 100%;
   height: 509px;
   background-color: #00367cdc;
@@ -17,17 +16,15 @@
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-
     margin-bottom: 27px;
   }
+
   p {
     color: color('gray');
     line-height: 26px;
-
     margin: 0;
     padding: 0;
   }
-
 }
 
 .intro-uno {
@@ -42,12 +39,10 @@
       padding: 0 70px;
     }
   }
-
 }
 
 .services {
-
-  .services-list {
+  &-list {
     display: flex;
     list-style: none;
     padding: 0;
@@ -56,6 +51,7 @@
     li {
       width: 400px;
       padding: 160px 53px 80px;
+
       h3 {
         position: relative;
         font-size: 21px;
@@ -63,49 +59,43 @@
         margin-bottom: 24px;
         padding: 0;
       }
+
       p {
         color: color('gray');
         margin: 0;
         padding: 0;
       }
     }
+
     li:first-child h3::before {
       content: "";
-
       top: -99px;
       margin-left: -4px;
-
       position: absolute;
       width: 75px;
       height: 72px;
-
       background-image: url("../img/icon-1.png");
     }
+
     li:nth-child(2) h3::before {
       content: "";
-
       top: -99px;
       margin-left: -20px;
-
       position: absolute;
       width: 74px;
       height: 70px;
-
       background-image: url("../img/icon-3.png");
     }
+
     li:last-child h3::before {
       content: "";
-
       top: -105px;
       margin-left: 19px;
-
       position: absolute;
       width: 64px;
       height: 76px;
-
       background-image: url("../img/icon-2.png");
     }
-
   }
 }
 
@@ -116,14 +106,15 @@
 
   .obertka {
     margin: 47px 45px 40px;
+
     h2 {
       padding: 0 80px;
     }
+
     p {
       padding: 0;
     }
   }
-
 }
 
 .intro-other {
@@ -145,6 +136,7 @@
         margin-bottom: 25px;
         padding: 0 55px;
       }
+
       p {
         color: color('gray');
         margin-top: 20px;
@@ -154,18 +146,15 @@
 }
 
 .appointment-info {
-
   h2 {
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 28px;
   }
+
   p {
     color: color('gray');
     line-height: 24px;
     margin-bottom: 43px;
   }
-
 }
-
-
