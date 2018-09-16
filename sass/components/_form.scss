@@ -37,7 +37,7 @@
   .filter {
     display: flex;
     color: color('white');
-    background-color: #ffffff;
+    background-color: color('white');
     background-image: url("../img/filter-bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
