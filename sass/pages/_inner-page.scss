@@ -31,22 +31,22 @@
       line-height: 18px;
     }
 
-    a {
-      text-decoration: underline dotted color("blue");
-      opacity: 0.3;
-    }
-
-    .active {
-      color: color("blue");
-      text-decoration: none;
-      opacity: 1;
-    }
-
     .sorting-by {
       margin-left: 48px;
 
       li {
         margin-right: 33px;
+
+        .sorting-by-item {
+          opacity: 0.3;
+          border-bottom: dotted color("blue");
+        }
+
+        .active {
+          color: color("blue");
+          opacity: 1;
+          border: none;
+        }
       }
     }
 
@@ -62,7 +62,7 @@
       }
 
       .sorting-from-high {
-        background-image: url("../img/icon-up-dir.png");
+        background-image: url("../img/icon-up-dir.svg");
         background-repeat: no-repeat;
         background-position: 0 0;
         // костыль для скрытия текста
@@ -71,7 +71,7 @@
       }
 
       .sorting-from-down {
-        background-image: url("../img/icon-down-dir.png");
+        background-image: url("../img/icon-down-dir.svg");
         background-repeat: no-repeat;
         background-position: 0 0;
         // костыль для скрытия текста

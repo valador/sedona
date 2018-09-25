@@ -738,17 +738,17 @@ input[type="radio"].visually-hidden {
     list-style: none;
     font-size: 12px;
     line-height: 18px; }
-  .inner-page .sorting a {
-    text-decoration: underline dotted #81b3d2;
-    opacity: 0.3; }
-  .inner-page .sorting .active {
-    color: #81b3d2;
-    text-decoration: none;
-    opacity: 1; }
   .inner-page .sorting .sorting-by {
     margin-left: 48px; }
     .inner-page .sorting .sorting-by li {
       margin-right: 33px; }
+      .inner-page .sorting .sorting-by li .sorting-by-item {
+        opacity: 0.3;
+        border-bottom: dotted #81b3d2; }
+      .inner-page .sorting .sorting-by li .active {
+        color: #81b3d2;
+        opacity: 1;
+        border: none; }
   .inner-page .sorting .sorting-from {
     margin-left: auto;
     list-style: none;
@@ -758,13 +758,13 @@ input[type="radio"].visually-hidden {
       width: 11px;
       height: 10px; }
     .inner-page .sorting .sorting-from .sorting-from-high {
-      background-image: url("../img/icon-up-dir.png");
+      background-image: url("../img/icon-up-dir.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       text-indent: 400px;
       margin-right: 12px; }
     .inner-page .sorting .sorting-from .sorting-from-down {
-      background-image: url("../img/icon-down-dir.png");
+      background-image: url("../img/icon-down-dir.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       text-indent: 400px;
