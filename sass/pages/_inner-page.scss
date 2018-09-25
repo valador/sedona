@@ -9,6 +9,7 @@
   .sorting {
     display: flex;
     margin-left: 72px;
+    align-items: center;
 
     span {
       font-size: 21px;
@@ -19,11 +20,64 @@
     h2 {
       font-size: 12px;
       line-height: 18px;
-      font-weight: 400;
+      font-weight: normal;
+      margin-left: 48px;
     }
 
     ul {
+      display: flex;
       list-style: none;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    a {
+      text-decoration: underline dotted color("blue");
+      opacity: 0.3;
+    }
+
+    .active {
+      color: color("blue");
+      text-decoration: none;
+      opacity: 1;
+    }
+
+    .sorting-by {
+      margin-left: 48px;
+
+      li {
+        margin-right: 33px;
+      }
+    }
+
+    .sorting-from {
+      margin-left: auto;
+      list-style: none;
+      padding: 0;
+
+      a {
+        display: inline-block;
+        width: 11px;
+        height: 10px;
+      }
+
+      .sorting-from-high {
+        background-image: url("../img/icon-up-dir.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        // костыль для скрытия текста
+        text-indent: 400px;
+        margin-right: 12px;
+      }
+
+      .sorting-from-down {
+        background-image: url("../img/icon-down-dir.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        // костыль для скрытия текста
+        text-indent: 400px;
+        margin-right: 73px;
+      }
     }
   }
 
@@ -59,3 +113,5 @@
     background-repeat: no-repeat;
   }
 }
+
+
