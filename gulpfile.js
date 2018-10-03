@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const connect = require('gulp-connect');
-const modRewrite = require('connect-modrewrite');
 
 gulp.task('connect', function(){
   connect.server({
@@ -8,14 +7,6 @@ gulp.task('connect', function(){
     port: 8080,
     debug: true,
     livereload: true,
-    middleware: function() {
-      return [
-        modRewrite([
-          '^/static/static/(.*)$ /static/$1 [L]',
-          '^/static/(.*)/$ /$1/ [L]'
-        ])
-      ]
-    }
   });
 });
 
@@ -42,7 +33,7 @@ gulp.task('scss', () => {
     .pipe(postcss([
       postcssImport(),
       precss(),
-      autoprefixer(),
+      autoprefixer("last 2 version"),
       cssnano(),
     ]))
     .pipe(sourcemaps.write('.'))
