@@ -2,28 +2,26 @@
   "name": "sedona",
   "version": "0.0.1",
   "dependencies": {
+    "connect-modrewrite": "^0.10.2",
     "express": "^4.16.3"
   },
   "scripts": {
-    "start1": "http-server",
-    "start": "npm-run-all --parallel liveserver watch --open=/static",
-    "gulp": "gulp",
-    "liveserver": "live-server",
-    "watch": "node-sass sass/main.scss static/css/main.css -w",
-    "build": "node-sass sass/main.scss static/css/main.css --output-style compressed"
+    "start": "gulp",
+    "watch": "gulp watch",
+    "build": "gulp scss"
   },
   "description": "",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/valador/barbershop.git"
+    "url": "git+https://github.com/valador/sedona.git"
   },
   "author": "SLAYER",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/valador/barbershop/issues"
+    "url": "https://github.com/valador/sedona/issues"
   },
-  "homepage": "https://github.com/valador/barbershop#readme",
+  "homepage": "https://github.com/valador/sedona#readme",
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "babel-eslint": "^9.0.0",
@@ -39,6 +37,7 @@
     "node-sass": "^4.9.3",
     "npm-run-all": "^4.1.3",
     "postcss-import": "^12.0.0",
+    "precss": "^3.1.2",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-declaration-strict-value": "^1.0.4",
