@@ -81,11 +81,12 @@
             <input class="filter-input" type="text" placeholder="До 3000" name="max-cost" id="max-cost">
           </li>
         </ul>
-        <label class="visually-hidden" for="my-min-range">Ползунок выбора минимальной стоимости</label>
-        <label class="visually-hidden" for="my-max-range">Ползунок выбора максимальной стоимости</label>
-        <div class="slider-container" data-lbound='100' data-ubound='200'>
-          <input type="range" min="0" max="2900" step="100" value="100" class="slider" id="my-min-range">
-          <input type="range" min="200" max="3000" step="100" value="200" class="slider" id="my-max-range">
+        <label class="visually-hidden" for="min-range">Ползунок выбора минимальной стоимости</label>
+        <label class="visually-hidden" for="max-range">Ползунок выбора максимальной стоимости</label>
+        <div class="range-slider">
+          <span class="rangeValues"></span>
+          <input type="range" min="0" max="2900" step="100" value="100" class="slider" id="min-range">
+          <input type="range" min="200" max="3000" step="100" value="200" class="slider" id="max-range">
         </div>
         <button class="button filters-submit-button" type="submit">Показать</button>
       </fieldset>
@@ -199,6 +200,6 @@
     <img src="img/developer.png" alt="Разработчик">
   </div>
 </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>

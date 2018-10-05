@@ -11,7 +11,7 @@ gulp.task('connect', function(){
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./sass/**/*.scss', ['scss', 'livereload']);
+  gulp.watch('./sass/**/*.scss', ['scss']);
   gulp.watch('./static/**/*', ['livereload']);
 });
 
@@ -19,7 +19,7 @@ gulp.task('livereload', function (){
   gulp.src('./static/**/*')
     .pipe(connect.reload());
 });
-
+//не работают кастомные функции, завести или забить...
 gulp.task('scss', () => {
   const postcss = require('gulp-postcss');
   const sourcemaps = require('gulp-sourcemaps');
@@ -28,12 +28,12 @@ gulp.task('scss', () => {
   const autoprefixer = require('autoprefixer');
   const cssnano = require('cssnano');
   return gulp
-    .src('static/**/*.css')
+    .src('./sass/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(postcss([
       postcssImport(),
       precss(),
-      autoprefixer("last 2 version"),
+      autoprefixer({browsers: ['last 2 versions', 'IE >= 11', '> 1%']}),
       cssnano(),
     ]))
     .pipe(sourcemaps.write('.'))
