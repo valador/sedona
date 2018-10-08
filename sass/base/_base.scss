@@ -5,10 +5,10 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: color('black');
+  color: $black;
   text-transform: uppercase;
   text-align: center;
-  background-color: color('textfield-container');
+  background-color: $textfield-container;
 }
 
 a {

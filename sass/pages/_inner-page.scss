@@ -39,11 +39,11 @@
 
         .sorting-by-item {
           opacity: 0.3;
-          border-bottom: dotted color("blue");
+          border-bottom: dotted $blue;
         }
 
         .active {
-          color: color("blue");
+          color: $blue;
           opacity: 1;
           border: none;
         }
@@ -62,7 +62,7 @@
       }
 
       .sorting-from-high {
-        background-image: url("../img/icon-up-dir.svg");
+        background-image: url("/img/icon-up-dir.svg");
         background-repeat: no-repeat;
         background-position: 0 0;
         // костыль для скрытия текста
@@ -71,7 +71,7 @@
       }
 
       .sorting-from-down {
-        background-image: url("../img/icon-down-dir.svg");
+        background-image: url("/img/icon-down-dir.svg");
         background-repeat: no-repeat;
         background-position: 0 0;
         // костыль для скрытия текста
@@ -95,7 +95,7 @@
     top: 0;
     width: 23px;
     height: 23px;
-    background-image: url("../img/checkbox-off.svg");
+    background-image: url("/img/checkbox-off.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
@@ -108,10 +108,8 @@
     top: 0;
     width: 27px;
     height: 23px;
-    background-image: url("../img/checkbox-on.svg");
+    background-image: url("/img/checkbox-on.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
 }
-
-

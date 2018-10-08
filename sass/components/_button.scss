@@ -13,19 +13,19 @@
   padding: 30px 137px;
   font-size: 21px;
   line-height: 26px;
-  color: color('white');
-  background-color: color('brown');
+  color: $white;
+  background-color: $brown;
 
   &:hover {
-    background-color: color('brown-hover');
+    background-color: $brown-hover;
   }
 
   &:focus {
-    background-color: color('brown-active');
+    background-color: $brown-active;
   }
 
   &:active {
-    background-color: color('brown-active');
+    background-color: $brown-active;
   }
 }
 
@@ -34,18 +34,18 @@
   height: 60px;
   line-height: 26px;
   font-size: 21px;
-  background-color: color('blue');
+  background-color: $blue;
 
   &:hover {
-    background-color: color('blue-hover');
+    background-color: $blue-hover;
   }
 
   &:focus {
-    background-color: color('blue-active');
+    background-color: $blue-active;
   }
 
   &:active {
-    background-color: color('blue-active');
+    background-color: $blue-active;
   }
 }
 
@@ -61,6 +61,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: color('blue');
+  background-color: $blue;
 
 }

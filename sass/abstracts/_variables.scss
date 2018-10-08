@@ -1,31 +1,20 @@
-//Базовый шрифт
-//$base-font-stack: ;
+// Базовый шрифт
+// $base-font-stack: ;
 
-//Цвета
-$colors: (
-  'white': #fff,
-  'black': #000,
-  'textfield-container': #f2f2f2,
-  'textfield-hover': #ebebeb,
-  'bg-white': #eee,
-  'blue': #81b3d2,
-  'blue-hover': #669ec0,
-  'blue-active': #5496bd,
-  'brown': #766357,
-  'brown-hover': #604e43,
-  'brown-active': #503e33,
-  'footer-white': #f9fbf6,
-  'gray': #333,
-  'shadow-cont': #000101,
-  'nav-current': #766357
-);
+// Цвета
 
-@function color($key) {
-  @if map-has-key($colors, $key) {
-    @return map-get($colors, $key);
-  }
-
-  @warn "Unknown `#{$key}` in $colors.";
-
-  @return null;
-}
+$white: #fff;
+$black: #000;
+$textfield-container: #f2f2f2;
+$textfield-hover: #ebebeb;
+$bg-white: #eee;
+$blue: #81b3d2;
+$blue-hover: #669ec0;
+$blue-active: #5496bd;
+$brown: #766357;
+$brown-hover: #604e43;
+$brown-active: #503e33;
+$footer-white: #f9fbf6;
+$gray: #333;
+$shadow-cont: #000101;
+$nav-current: #766357;

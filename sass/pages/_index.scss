@@ -3,7 +3,7 @@
   width: 100%;
   height: 509px;
   background-color: #00367cdc;
-  background-image: url("../img/stripe.png"), url("../img/banner-text.png"), url("../img/intro-bg.jpg");
+  background-image: url("/img/stripe.png"), url("/img/banner-text.png"), url("/img/intro-bg.jpg");
   background-position: bottom center, center center, top center;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: contain, auto, cover;
@@ -20,7 +20,7 @@
   }
 
   p {
-    color: color('gray');
+    color: $gray;
     line-height: 26px;
     margin: 0;
     padding: 0;
@@ -31,8 +31,8 @@
   padding: 0;
   margin: 0;
   display: flex;
-  color: color('white');
-  background-color: color('blue');
+  color: $white;
+  background-color: $blue;
 
   .obertka {
     h2 {
@@ -60,7 +60,7 @@
       }
 
       p {
-        color: color('gray');
+        color: $gray;
         margin: 0;
         padding: 0;
       }
@@ -73,7 +73,7 @@
       position: absolute;
       width: 75px;
       height: 72px;
-      background-image: url("../img/icon-1.png");
+      background-image: url("/img/icon-1.png");
     }
 
     li:nth-child(2) h3::before {
@@ -83,7 +83,7 @@
       position: absolute;
       width: 74px;
       height: 70px;
-      background-image: url("../img/icon-3.png");
+      background-image: url("/img/icon-3.png");
     }
 
     li:last-child h3::before {
@@ -93,15 +93,15 @@
       position: absolute;
       width: 64px;
       height: 76px;
-      background-image: url("../img/icon-2.png");
+      background-image: url("/img/icon-2.png");
     }
   }
 }
 
 .intro-two {
   display: flex;
-  color: color('white');
-  background-color: color('blue');
+  color: $white;
+  background-color: $blue;
 
   .obertka {
     margin: 47px 45px 40px;
@@ -117,7 +117,7 @@
 }
 
 .intro-other {
-  background-color: color('bg-white');
+  background-color: $bg-white;
   margin-bottom: 48px;
 
   .intro-other-items {
@@ -137,7 +137,7 @@
       }
 
       p {
-        color: color('gray');
+        color: $gray;
         margin-top: 20px;
       }
     }
@@ -153,7 +153,7 @@
   }
 
   p {
-    color: color("gray");
+    color: $gray;
     line-height: 24px;
     margin-bottom: 43px;
   }
