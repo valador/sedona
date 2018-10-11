@@ -5,6 +5,7 @@
     <title>Городок Седона: Отели</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
 </head>
 <body class="inner-page">
 
@@ -74,11 +75,11 @@
         <ul class="cost-per-day-filter">
           <li class="filter-option-cost">
             <label class="visually-hidden" for="min-cost">От 0</label>
-            <input class="filter-input" type="text" placeholder="От 0" name="min-cost" id="min-cost">
+            <input class="filter-input" type="text" min="0" max="2900" step="1" value="0" placeholder="От 0" name="min-cost" id="min-cost">
           </li>
           <li class="filter-option-cost">
             <label class="visually-hidden" for="max-cost">До 3000</label>
-            <input class="filter-input" type="text" placeholder="До 3000" name="max-cost" id="max-cost">
+            <input class="filter-input" type="text" min="100" max="3000" step="1" value="3000" placeholder="До 3000" name="max-cost" id="max-cost">
           </li>
         </ul>
         <label class="visually-hidden" for="min-range">Ползунок выбора минимальной стоимости</label>
@@ -86,7 +87,7 @@
         <div class="range-slider">
           <span class="rangeValues"></span>
           <input type="range" min="0" max="2900" step="100" value="100" class="slider" id="min-range">
-          <input type="range" min="200" max="3000" step="100" value="200" class="slider" id="max-range">
+          <input type="range" min="100" max="3000" step="100" value="200" class="slider" id="max-range">
         </div>
         <button class="button filters-submit-button" type="submit">Показать</button>
       </fieldset>
@@ -201,5 +202,6 @@
   </div>
 </footer>
 <script src="js/main.js"></script>
+<script src="js/nouislider.min.js"></script>
 </body>
 </html>
