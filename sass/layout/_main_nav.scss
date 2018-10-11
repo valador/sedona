@@ -26,6 +26,7 @@
 
       .site-navigation-current {
         color: $nav-current;
+        pointer-events: none;
       }
 
       a {

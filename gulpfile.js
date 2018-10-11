@@ -2,9 +2,6 @@ const gulp = require('gulp');
 const connect = require('gulp-connect');
 const rename = require('gulp-rename');
 
-
-
-
 gulp.task('connect', function(done){
   connect.server({
     root: 'static',
