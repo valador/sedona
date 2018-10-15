@@ -1,31 +1,60 @@
-let sliderLeft=document.getElementById("min-range");
-let sliderRight=document.getElementById("max-range");
-let inputMin=document.getElementById("min-cost");
-let inputMax=document.getElementById("max-cost");
+//import noUiSlider from "nouislider";
 
-///value update from input to slider
-//function input update to slider
-function sliderLeftInput(){ //input update slider left
-  sliderLeft.value=inputMin.value;
-}
-function sliderRightInput(){ //input update slider right
-  sliderRight.value=(inputMax.value); //change in input max updated in slider right
-}
+// this script will activate a range selector on every .nouirange element with a specific html structure with valid input. Options like minand max are taken from the html attributes.
+document.querySelectorAll('.range-slider').forEach(function (el) {
+  let htmlinsert = document.createElement('div');
+  let realmininput = el.querySelector('.min');
+  let realmaxinput = el.querySelector('.max');
+  realmininput.style.display = "none ";
+  realmaxinput.style.display = "none ";
+  let min = realmininput.getAttribute('min');
+  let max = realmaxinput.getAttribute('max');
+  let steps = realmaxinput.getAttribute('step');
+  let snapValues = [
+    document.getElementById('min-cost'),
+    document.getElementById('max-cost')
+    ];
+  el.appendChild(htmlinsert);
 
-//calling function on change of inputs to update in slider
-inputMin.addEventListener("change",sliderLeftInput);
-inputMax.addEventListener("change",sliderRightInput);
+  noUiSlider.create(htmlinsert, {
+    start: [realmininput.value, realmaxinput.value],
+    connect: true,
+    step: Number(steps),
+    range: {
+      'min': Number(min),
+      'max': Number(max)
+    }
+  });
 
-///value update from slider to input
-//functions to update from slider to inputs
-function inputMinSliderLeft(){ //slider update inputs
-  inputMin.value=sliderLeft.value;
-}
-function inputMaxSliderRight(){//slider update inputs
-  inputMax.value=sliderRight.value;
-}
-sliderLeft.addEventListener("change",inputMinSliderLeft);
-sliderRight.addEventListener("change",inputMaxSliderRight);
+  htmlinsert.noUiSlider.on('update', function( values, handle ) {
+    snapValues[handle].innerHTML = values[handle];
+  });
+
+  htmlinsert.noUiSlider.on('change', function (values) {
+    realmininput.value = String(values[0]);
+    realmaxinput.value = String(values[1]);
+  });
+});
+
+
+//---------- FORM SENDING ------ //
+const formToJSON = elements => [].reduce.call(elements, (data, element) => {
+  console.log(element.tagName);
+  if (element.tagName == "INPUT" && element.name != "") {
+    data[element.name] = element.value;
+  }
+  return data;
+
+
+}, {});
+
+document.querySelector("form").addEventListener('submit', function (ev) {
+  ev.preventDefault();
+  var data = formToJSON(this);
+  console.log(data);
+  // Perform you ajax send here.
+});
+
 // -------------------------------------------------------
 // Get the modal
 const modal = document.getElementById('appointment-modal');
