@@ -1,0 +1,25 @@
+$slider-line: #fff;
+$slider-outrange: gray;
+
+.range-slider {
+  .noUi-horizontal {
+    height: 2px;
+
+    .noUi-base {
+      .noUi-connects {
+        background: $slider-line;
+
+        .noUi-connect {
+          background: $slider-outrange;
+        }
+      }
+
+      .noUi-handle {
+
+        &:before, &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

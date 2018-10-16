@@ -34,10 +34,8 @@ document.querySelectorAll('.range-slider').forEach(function (el) {
     realmaxinput.value = String(values[1]);
   });
 });
-
-
 //---------- FORM SENDING ------ //
-const formToJSON = elements => [].reduce.call(elements, (data, element) => {
+/*const formToJSON = elements => [].reduce.call(elements, (data, element) => {
   console.log(element.tagName);
   if (element.tagName == "INPUT" && element.name != "") {
     data[element.name] = element.value;
@@ -52,7 +50,7 @@ document.querySelector("form").addEventListener('submit', function (ev) {
   var data = formToJSON(this);
   console.log(data);
   // Perform you ajax send here.
-});
+});*/
 
 // -------------------------------------------------------
 // Get the modal

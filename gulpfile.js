@@ -13,7 +13,7 @@ gulp.task('connect', function(done){
 });
 
 gulp.task('watch', function (done) {
-  gulp.watch('./sass/**/*.scss', gulp.parallel('sass'));
+  gulp.watch('./sass/**/*.scss', gulp.parallel('sass', 'livereload'));
   gulp.watch('./static/*', gulp.parallel('livereload'));
   done();
 });
