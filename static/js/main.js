@@ -1,6 +1,3 @@
-//import noUiSlider from "nouislider";
-
-// this script will activate a range selector on every .nouirange element with a specific html structure with valid input. Options like minand max are taken from the html attributes.
 document.querySelectorAll('.range-slider').forEach(function (el) {
   let htmlinsert = document.createElement('div');
   let realmininput = el.querySelector('.min');
@@ -10,10 +7,8 @@ document.querySelectorAll('.range-slider').forEach(function (el) {
   let min = realmininput.getAttribute('min');
   let max = realmaxinput.getAttribute('max');
   let steps = realmaxinput.getAttribute('step');
-  let snapValues = [
-    document.getElementById('min-cost'),
-    document.getElementById('max-cost')
-    ];
+  let minCostInput = document.getElementById('min-cost'),
+      maxCostInput = document.getElementById('max-cost');
   el.appendChild(htmlinsert);
 
   noUiSlider.create(htmlinsert, {
@@ -27,7 +22,11 @@ document.querySelectorAll('.range-slider').forEach(function (el) {
   });
 
   htmlinsert.noUiSlider.on('update', function( values, handle ) {
-    snapValues[handle].innerHTML = values[handle];
+    if ( handle ) {
+      maxCostInput.value = values[handle];
+    } else {
+      minCostInput.value = values[handle];
+    }
   });
 
   htmlinsert.noUiSlider.on('change', function (values) {
