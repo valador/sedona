@@ -82,7 +82,23 @@
   }
 
   .results {
-    margin-left: 72px;
+    .result {
+      display: flex;
+      flex-direction: column;
+
+      .result-item {
+        margin-left: 72px;
+
+/*        &::before {
+          content: "";
+          border: 2px solid black;
+        }*/
+
+        h3 {
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
 

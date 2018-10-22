@@ -15,6 +15,7 @@ document.querySelectorAll('.range-slider').forEach(function (el) {
     start: [realmininput.value, realmaxinput.value],
     connect: true,
     step: Number(steps),
+    margin: 200,
     range: {
       'min': Number(min),
       'max': Number(max)

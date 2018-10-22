@@ -1,7 +1,10 @@
 $slider-line: #fff;
 $slider-outrange: gray;
-
+/* Доделать ползунок, за рейнджем цвет не меняется*/
 .range-slider {
+  width: 320px;
+  margin-bottom: 33px;
+
   .noUi-horizontal {
     height: 2px;
 
